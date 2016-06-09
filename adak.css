@@ -102,6 +102,30 @@
         height: auto;
         padding: 1rem;
       }
+      .full-width, .half-width, .third-width, .fourth-width{
+        height: auto;
+        min-height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+        float: left;
+      }
+      .full-width{
+        width: 100%;
+      }
+      .half-width{
+        width: 50%;
+      }
+      .third-width{
+        width: 33.3%;
+      }
+      .fourth-width{
+        width: 25%;
+      }
     /* End */
 
     /* Colors */
@@ -160,6 +184,9 @@
     /* Other */
       .hide{
         opacity: 0;
+      }
+      .inline{
+        display: inline;
       }
     /* End */
 /* === End === */
