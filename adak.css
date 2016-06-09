@@ -4,12 +4,128 @@
     text-color: #2c3e50
     main-color: #3498db
     main-color-darker: #2980b9
+    warning-color: #c0392b;
+    success-color: #27ae60;
+  FONTS:
+    main-font: Open Sans
 */
 
 /* === Global Styles === */
+  html{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 175%;
+
+    transition: all .3s;
+  }
+
   body{
     background-color: #ecf0f1;
+    color: #2c3e50;
   }
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+
+  p,a,li{
+    line-height: 1.4;
+    max-width: 38rem;
+    padding: .25rem 1rem;
+    margin: 0 auto;
+  }
+/* === End === */
+
 /* === Class Styles === */
+    /* Centering and Sizing*/
+      .horizontal-center{
+        margin: 0 auto;
+        display: block;
+      }
+      .wrapper{
+        max-width: 100% !important;
+        box-sizing: border-box;
+        height: auto;
+        padding: 1rem;
+      }
+    /* Colors */
+      .main-color-text{
+        color: #3498db;
+      }
+      .background-color-text{
+        color: #ecf0f1;
+      }
+      .main-color-darker-text{
+        color: #2980b9;
+      }
+      .warning-color-text{
+        color: #c0392b;
+      }
+      .success-color-text{
+        color: #27ae60;
+      }
+      .main-color-bg{
+        background-color: #3498db;
+      }
+      .main-color-darker-bg{
+        background-color: #2980b9;
+      }
+      .warning-color-bg{
+        background-color: #c0392b;
+      }
+      .success-color-bg{
+        background-color: #27ae60;
+      }
+    /* Text Styles */
+      .text-center{
+        text-align: center;
+      }
+      .large-font-size{
+        font-size: 4rem;
+      }
+      .medium-font-size{
+        font-size: 2rem;
+      }
+      .small-font-size{
+        font-size: 1rem;
+      }
+      .light-font-weight{
+        font-weight: 300;
+      }
+      .normal-font-weight{
+        font-weight: 400;
+      }
+      .bold-font-weight{
+        font-weight: 600;
+      }
+/* === End === */
 
 /* === Media Queries === */
+  @media screen and (max-width: 1024px){
+    html{
+      font-size: 150%;
+    }
+  }
+  @media screen and (max-width: 720px){
+    html{
+      font-size: 125%;
+    }
+  }
+  @media screen and (max-width: 480px){
+    html{
+      font-size: 100%;
+    }
+  }
+  @media screen and (max-width: 360px){
+    html{
+      font-size: 80%;
+    }
+  }
+  @media screen and (max-width: 280px){
+    html{
+      font-size: 60%;
+    }
+  }
+/* === End === */
