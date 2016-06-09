@@ -1,0 +1,15 @@
+/*
+  COLORS:
+    background-color: #ecf0f1
+    text-color: #2c3e50
+    main-color: #3498db
+    main-color-darker: #2980b9
+*/
+
+/* === Global Styles === */
+  body{
+    background-color: #ecf0f1;
+  }
+/* === Class Styles === */
+
+/* === Media Queries === */
