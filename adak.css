@@ -51,14 +51,7 @@
         flex-direction: column;
         text-align: center;
       }
-      /* A sample background image for a header */
-        .background-image-sample{
-          background-image: url('sample.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-        }
-      /* End */
+
       .navbar{
         min-height: 2.5rem;
         width: 100%;
@@ -89,12 +82,33 @@
         text-decoration: none;
         color: #ecf0f1;
       }
+
+      /* A sample background image for a header */
+        .background-image-sample{
+          background-image: url('sample.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      /* End */
     /* End */
 
     /* Centering and Sizing*/
       .horizontal-center{
         margin: 0 auto;
         display: block;
+      }
+      .flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .flex-row{
+        flex-direction: row;
+      }
+      .flex-column{
+        flex-direction: column;
       }
       .wrapper{
         max-width: 100% !important;
@@ -109,7 +123,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 0;
         padding: 1rem;
         box-sizing: border-box;
         float: left;
@@ -181,12 +194,49 @@
         font-weight: 600;
       }
     /* End */
+    /* Forms */
+      form{
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      input{
+        margin-top: .35rem;
+        padding: .2rem;
+        border: 0;
+        font-size: 2rem;
+        color: #2c3e50;
+        background-color: darken(#ecf0f1, .05);
+        box-shadow: .1rem .1rem .5rem rgba(0,0,0,0.25);
+        display: block;
+        text-align: center;
+        width: 80%;
+      }
+      input[type="submit"]{
+        background-color:  #3498db;
+        color: #ecf0f1;
+        width: 50%;
+      }
+    /* End */
     /* Other */
       .hide{
         opacity: 0;
       }
       .inline{
         display: inline;
+      }
+      .box-shadow{
+        box-shadow: .1rem .1rem .5rem rgba(0,0,0,0.25);
+      }
+      .round{
+        border-radius: 1rem;
+      }
+      .no-border{
+        border: 0;
       }
     /* End */
 /* === End === */
